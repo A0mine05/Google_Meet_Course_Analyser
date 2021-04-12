@@ -1,3 +1,3 @@
-create database Kille;
+create database GoogleMeet;
 
-use Kille;
+use GoogleMeet;
