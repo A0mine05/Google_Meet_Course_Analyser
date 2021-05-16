@@ -1,0 +1,242 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Modele d'evaluation du cours</title>
+        <style>
+   html {
+  height:100%;
+}
+
+body {
+  margin:50;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+
+h1 {
+  font-family:monospace;
+}
+.bouton {
+  background-color: #008000;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+      
+        </style>
+    </head>
+    
+    <body>
+        <center><h1>Questionnaire d'evaluation</h1></center>
+        <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="content">
+  <h1>Questionnaire obligatoire</h1>
+</div>
+    
+
+<form name="form1">
+    <fieldset>
+    <legend>1. Comment qualiferiez-vous la charge de travail demandee par le cours?</br></legend>
+    Beaucoup trop importante <input type="radio" name="rep" value="reponse1"></br>
+    Trop importante <input type="radio" name="rep" value="reponse2" ></br>
+    Un peu importante <input type="radio" name="rep" value="reponse3" ></br>
+    Ni trop importante</br> ni trop insuffisante  <input type="radio" name="rep" value="reponse4"></br>
+    Un peu trop insuffisante <input type="radio" name="rep" value="reponse5" ></br>
+    Trop insuffisante  <input type="radio" name="rep" value="reponse6" ></br>
+    Beaucoup trop insuffisante  <input type="radio" name="rep" value="reponse7" ></br>
+    </fieldset>
+
+    <fieldset>
+   <legend> 2.Le cours a t-il repondu a vos attentes?</br></legend>
+    Extremement bien repondu  <input type="radio" name="rep1" value="reponse8" ></br>
+    Tres bien repondu  <input type="radio" name="rep1" value="reponse9" ></br>
+    Assez bien repondu  <input type="radio" name="rep1" value="reponse10" ></br>
+    Peu repondu <input type="radio" name="rep1" value="reponse11" ></br>
+    Pas du tout repondu <input type="radio" name="rep1" value="reponse12" ></br>
+</fieldset>
+<fieldset>
+    <legend>3. le cours a t-il contribue a votre connaissance en la matiere?</br></legend>
+    Enormement contribue<input type="radio" name="rep2" value="reponse13" ></br>
+    Beaucoup contribue<input type="radio" name="rep2" value="reponse14" ></br>
+    Plutot contribue<input type="radio" name="rep2" value="reponse15" ></br>
+    Peu contribue<input type="radio" name="rep2" value="reponse16" ></br>
+    Pas du tout contribue <input type="radio" name="rep2" value="reponse17" ></br>
+</fieldset>
+<fieldset>
+    <legend>4. Comment qualifierez-vous le cours?</br></legend>
+    Extremement facile<input type="radio" name="rep3" value="reponse18" ></br>
+    Tres facile <input type="radio" name="rep3" value="reponse19" ></br>
+    Assez facile<input type="radio" name="rep3" value="reponse20" ></br>
+    Ni facile ni difficile<input type="radio" name="rep3" value="reponse21" ></br>
+    Assez facile <input type="radio" name="rep3" value="reponse22" ></br>
+    Tres difficile<input type="radio" name="rep3" value="reponse23" ></br>
+    Extremement difficile <input type="radio" name="rep3" value="reponse24" ></br>
+</fieldset>
+<fieldset>
+    <legend> 5. Que pensez-vous du rythme du cours?</br></legend>
+    Beaucoup trop rapide<input type="radio" name="rep4" value="reponse25" ></br>
+    Trop rapide<input type="radio" name="rep4" value="reponse26" ></br>
+    Un peu trop rapide<input type="radio" name="rep4" value="reponse27" ></br>
+    Ni trop rapide ni trop lent<input type="radio" name="rep4" value="reponse28" ></br>
+    Un peu trop lent<input type="radio" name="rep4" value="reponse29" ></br>
+    Trop lent<input type="radio" name="rep4" value="reponse30" ></br>
+    Beaucoup trop lent <input type="radio" name="rep4" value="reponse31" ></br>
+</fieldset>
+<fieldset>
+    <legend>6. Pensez-vous que les supports utilises(support papier, presentation) durant le cours ont ete utiles?</br></legend>
+    Extremement utiles <input type="radio" name="rep5" value="reponse32" ></br>
+    Tres utiles<input type="radio" name="rep5" value="reponse33" ></br>
+    Assez utiles<input type="radio" name="rep5" value="reponse34" ></br>
+    Peu utiles<input type="radio" name="rep5" value="reponse35" ></br>
+    Pas du tout utiles <input type="radio" name="rep5" value="reponse36" ></br>
+</fieldset>
+<fieldset>
+    <legend> 7. Quelle est la probabilite que vous recommandiez le cours a d'autres etudiants?</br></legend>
+    Extremement probable<input type="radio" name="rep6" value="reponse37" ></br>
+    Fortement probable<input type="radio" name="rep6" value="reponse38" ></br>
+    Moderement probable<input type="radio" name="rep6" value="reponse39" ></br>
+    Peu probable<input type="radio" name="rep6" value="reponse40" ></br>
+    Pas du tout probable<input type="radio" name="rep6" value="reponse41" ></br>
+</fieldset>
+<fieldset>
+    <legend>8. Dans l'ensemble etes-vous satisfait(e) du contenu du cours?</br></legend>
+    Extremement satisfait(e)<input type="radio" name="rep7" value="reponse42" ></br>
+    Tres satisfait(e)<input type="radio" name="rep7" value="reponse43" ></br>
+    Assez satisfait(e)<input type="radio" name="rep7" value="reponse44" ></br>
+    Ni satifait(e) ni insatisfait(e)<input type="radio" name="rep7" value="reponse45" ></br>
+    Assez insatifait(e)<input type="radio" name="rep7" value="reponse46" ></br>
+    Tres insatisfait(e)<input type="radio" name="rep7" value="reponse47" ></br>
+    Extremement insatisfait(e)<input type="radio" name="rep7" value="reponse48" ></br>
+</fieldset>
+<fieldset>
+    <legend>9. Dans l'ensemble quel est votre degre de satisfation concernant le cours?</br></legend>
+    Extremement satisfait(e)<input type="radio" name="rep8" value="reponse49" ></br>
+    Tres satisfait(e)<input type="radio" name="rep8" value="reponse50" ></br>
+    Assez satisfait(e)<input type="radio" name="rep8" value="reponse51" ></br>
+    Ni satifait(e) ni insatisfait(e)<input type="radio" name="rep8" value="reponse52" ></br>
+    Assez insatifait(e)<input type="radio" name="rep8" value="reponse53" ></br>
+    Tres insatisfait(e)<input type="radio" name="rep8" value="reponse54" ></br>
+    Extremement insatisfait(e)<input type="radio" name="rep8" value="reponse55" ></br>
+</fieldset>
+10. Si vous avez d'autres suggestions ou commentaires concernant le cours, merci de nous en faire part.</br>
+    <textarea> </textarea></br>
+    <fieldset>
+        <legend>11. Quel etait le niveau de qualite global de l'instructeur pour ce cours?</br></legend>
+    Excellent<input type="radio" name="rep9" value="reponse56" ></br>
+    Tres bon  <input type="radio" name="rep9" value="reponse57" ></br>
+    Bon<input type="radio" name="rep9" value="reponse58" ></br>
+    Assez bon<input type="radio" name="rep9" value="reponse59" ></br>
+    Faible<input type="radio" name="rep9" value="reponse60" ></br>
+</fieldset>
+<fieldset>
+    <legend> 12. Le cours etait-il bien organise?</br></legend>
+    Extremement bien organise<input type="radio" name="rep10" value="reponse61" ></br>
+    Tres bien organise <input type="radio" name="rep10" value="reponse62" ></br>
+    Assez bien organise<input type="radio" name="rep10" value="reponse63" ></br>
+    Pas tres organise<input type="radio" name="rep10" value="reponse64" ></br>
+    Pas du tout organise<input type="radio" name="rep10" value="reponse65" ></br>
+</fieldset>
+<fieldset>
+    <legend>13. Quel est le niveau de connaissance du sujet de cours de l'instructeur?</br></legend>
+    Excellent niveau de connaissance<input type="radio" name="rep11" value="reponse66" ></br>
+    Tres bon niveau de connaissance <input type="radio" name="rep11" value="reponse67" ></br>
+    Assez bon niveau de connaissance <input type="radio" name="rep11" value="reponse68" ></br>
+    Niveau de connaissance mediocre<input type="radio" name="rep11" value="reponse69" ></br>
+    Aucune connaissance<input type="radio" name="rep11" value="reponse70" ></br>
+</fieldset>
+<fieldset>
+    <legend>14.les explications de l'instructeur etaient-elles claires?</br></legend>
+    Extremement claires<input type="radio" name="rep12" value="reponse71" ></br>
+    Tres claires <input type="radio" name="rep12" value="reponse72" ></br>
+    Assez claires <input type="radio" name="rep12" value="reponse73" ></br>
+    Peu claires <input type="radio" name="rep12" value="reponse74" ></br>
+    Pas du tout claires<input type="radio" name="rep12" value="reponse75" ></br>
+</fieldset>
+<fieldset>
+    <legend>15. De quelle maniere l'instructeur etaient-il concerne par l'apprentissage des eleves dans ce cours?</br></legend>
+    Extremement concerne<input type="radio" name="rep13" value="reponse76" ></br>
+    Tres concerne <input type="radio" name="rep13" value="reponse77" ></br>
+    Assez concerne<input type="radio" name="rep13" value="reponse78" ></br>
+    Peu concerne<input type="radio" name="rep13" value="reponse79" ></br>
+    Pas du tout concerne<input type="radio" name="rep13" value="reponse80" ></br>
+</fieldset>
+<fieldset>
+    <legend>16. L'instructeur avait-il une attitude encourageante envers les eleves?</br></legend>
+    Extremement encouragente<input type="radio" name="rep14" value="reponse81" ></br>
+    Tres encouragente<input type="radio" name="rep14" value="reponse82" ></br>
+    Assez encouragente<input type="radio" name="rep14" value="reponse83" ></br>
+    Peu encouragente<input type="radio" name="rep14" value="reponse84" ></br>
+    Pas du tout encouragente<input type="radio" name="rep14" value="reponse85" ></br>
+</fieldset>
+<fieldset>
+    <legend>17. L'instructeur etait-il disponible en dehors du cours?</br></legend>
+    Extremement disponible<input type="radio" name="rep15" value="reponse86" ></br>
+    Tres disponible<input type="radio" name="rep15" value="reponse87" ></br>
+    Assez disponible<input type="radio" name="rep15" value="reponse88" ></br>
+    Pas tres disponible<input type="radio" name="rep15" value="reponse89" ></br>
+    Pas du tout disponible<input type="radio" name="rep15" value="reponse90" ></br>
+</fieldset>
+<fieldset>
+    <legend>18.Dans quelle mesure les criteres d'evaluation du cours etaient-ils clairs?</br></legend>
+    Extremement clairs<input type="radio" name="rep16" value="reponse91" ></br>
+    Tres clairs<input type="radio" name="rep16" value="reponse92" ></br>
+    Assez clairs<input type="radio" name="rep16" value="reponse93" ></br>
+    Peu clairs<input type="radio" name="rep16" value="reponse94" ></br>
+    Pas clairs du tout<input type="radio" name="rep16" value="reponse95" ></br>
+</fieldset>
+</div>
+</form>
+    
+    <button type="submit" class="bouton">Soumettre</button>
+</body>
+    </html>
