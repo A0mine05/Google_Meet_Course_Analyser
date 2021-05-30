@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "googleapis": "^74.2.0",
-    "mysql": "^2.18.1"
-  }
-}
