@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modele d'evaluation du cours</title>
+          <style>
+                   html {
+                  height:100%;
+                }
+
+                body {
+                  margin:50;
+                }
+
+                .bg {
+                  animation:slide 3s ease-in-out infinite alternate;
+                  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+                  bottom:0;
+                  left:-50%;
+                  opacity:.5;
+                  position:fixed;
+                  right:-50%;
+                  top:0;
+                  z-index:-1;
+                }
+
+                .bg2 {
+                  animation-direction:alternate-reverse;
+                  animation-duration:4s;
+                }
+
+                .bg3 {
+                  animation-duration:5s;
+                }
+
+                .content {
+                  background-color:rgba(255,255,255,.8);
+                  border-radius:.25em;
+                  box-shadow:0 0 .25em rgba(0,0,0,.25);
+                  box-sizing:border-box;
+                  left:50%;
+                  padding:10vmin;
+                  position:fixed;
+                  text-align:center;
+                  top:50%;
+                  transform:translate(-50%, -50%);
+                }
+
+
+                h1 {
+                  font-family:monospace;
+                }
+                .bouton {
+                  background-color: #008000;
+                  border: none;
+                  color: white;
+                  padding: 10px;
+                  margin: 10px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 15px;
+                  cursor: pointer;
+                }
+
+                @keyframes slide {
+                  0% {
+                    transform:translateX(-25%);
+                  }
+                  100% {
+                    transform:translateX(25%);
+                  }
+                }
+          </style>
+    </head>
+    <body>
+       <script type="text/Javascript">
+            function reponse()
+            {
+                var score=0;
+                
+                //Q1
+                if (document.R.rep.un.checked || document.R.rep.deux.checked || document.R.rep.trois.checked || document.R.rep.quatre.checked || document.R.rep.cinq.checked)
+                {
+                  var a = document.getElementsByName("rep").value;
+                  var aa = Number.parseInt('a' , 10);
+                }
+              
+                //Q2
+                if (document.R.rep1.un.checked || document.R.rep1.deux.checked || document.R.rep1.trois.checked || document.R.rep1.quatre.checked || document.R.rep1.cinq.checked)
+               {
+                var b = document.getElementsByName("rep1").value;
+                var bb = Number.parseInt('b' , 10);
+               }
+
+                //Q3
+                if (document.R.rep2.un.checked || document.R.rep2.deux.checked || document.R.rep2.trois.checked || document.R.rep2.quatre.checked || document.R.rep2.cinq.checked)
+               { 
+                var c = document.getElementsByName("rep2").value;
+                var cc = Number.parseInt('c' , 10);
+               }
+
+                //Q4
+                if (document.R.rep3.un.checked || document.R.rep3.deux.checked || document.R.rep3.trois.checked || document.R.rep3.quatre.checked || document.R.rep3.cinq.checked)
+               { 
+                var d = document.getElementsByName("rep3").value;
+                var dd = Number.parseInt('d' , 10);
+               }
+
+                //Q5
+                if (document.R.rep4.un.checked || document.R.rep4.deux.checked || document.R.rep4.trois.checked || document.R.rep4.quatre.checked || document.R.rep4.cinq.checked)
+               {
+                var e = document.getElementsByName("rep4").value;
+                var ee = Number.parseInt('e' , 10);
+               }
+
+                //Q6
+                if (document.R.rep5.un.checked || document.R.rep5.deux.checked || document.R.rep5.trois.checked || document.R.rep5.quatre.checked || document.R.rep5.cinq.checked)
+               { 
+                var f = document.getElementsByName("rep5").value;
+                var ff = Number.parseInt('f' , 10);
+               }
+
+                //Q7
+                if (document.R.rep6.un.checked || document.R.rep6.deux.checked || document.R.rep6.trois.checked || document.R.rep6.quatre.checked || document.R.rep6.cinq.checked)
+               {
+                var g = document.getElementsByName("rep6").value;
+                var gg = Number.parseInt('g' , 10);
+               }
+
+                //Q8
+                if (document.R.rep7.un.checked || document.R.rep7.deux.checked || document.R.rep7.trois.checked || document.R.rep7.quatre.checked || document.R.rep7.cinq.checked)
+               { 
+                var h = document.getElementsByName("rep7").value;
+                var hh = Number.parseInt('h' , 10);
+               }
+
+                //Q9
+                if (document.R.rep8.un.checked || document.R.rep8.deux.checked || document.R.rep8.trois.checked || document.R.rep8.quatre.checked || document.R.rep8.cinq.checked)
+               {
+                var i = document.getElementsByName("rep8").value;
+                var ii = Number.parseInt('i' , 10);
+               }
+
+                //Q10
+                if (document.R.rep9.un.checked || document.R.rep9.deux.checked || document.R.rep9.trois.checked || document.R.rep9.quatre.checked || document.R.rep9.cinq.checked)
+               {
+                var j = document.getElementsByName("rep9").value;
+                var jj = Number.parseInt('j' , 10);
+               }
+
+                //Q11
+                if (document.R.rep10.un.checked || document.R.rep10.deux.checked || document.R.rep10.trois.checked || document.R.rep10.quatre.checked || document.R.rep10.cinq.checked)
+                {
+                 var k = document.getElementsByName("rep10").value;
+                 var kk = Number.parseInt('k' , 10);
+                }
+
+                //Q12
+                if (document.R.rep11.un.checked || document.R.rep11.deux.checked || document.R.rep11.trois.checked || document.R.rep11.quatre.checked || document.R.rep11.cinq.checked)
+                { 
+                  var l = document.getElementsByName("rep11").value;
+                  var ll = Number.parseInt('l' , 10);
+                }
+
+                //Q13
+                if (document.R.rep12.un.checked || document.R.rep12.deux.checked || document.R.rep12.trois.checked || document.R.rep12.quatre.checked || document.R.rep12.cinq.checked)
+                {
+                  var m = document.getElementsByName("rep12").value;
+                  var mm = Number.parseInt('m' , 10);
+                }
+
+                //Q14
+                if (document.R.rep13.un.checked || document.R.rep13.deux.checked || document.R.rep13.trois.checked || document.R.rep13.quatre.checked || document.R.rep13.cinq.checked)
+                { 
+                  var n = document.getElementsByName("rep13").value;
+                  var nn = Number.parseInt('n' , 10);
+                }
+
+                //Q15
+                if (document.R.rep14.un.checked || document.R.rep14.deux.checked || document.R.rep14.trois.checked || document.R.rep14.quatre.checked || document.R.rep14.cinq.checked)
+                {
+                  var o = document.getElementsByName("rep14").value;
+                  var oo = Number.parseInt('o' , 10);
+                }
+
+                // Q16
+                if (document.R.rep15.un.checked || document.R.rep15.deux.checked || document.R.rep15.trois.checked || document.R.rep15.quatre.checked || document.R.rep15.cinq.checked)
+                { 
+                  var p = document.getElementsByName("rep15").value;
+                  var pp = Number.parseInt('p' , 10);
+                }
+
+                  //Q17
+                if (document.R.rep16.un.checked || document.R.rep16.deux.checked || document.R.rep16.trois.checked || document.R.rep16.quatre.checked || document.R.rep16.cinq.checked)
+                {
+                  var q = document.getElementsByName("rep16").value;
+                  var qq = Number.parseInt('q' , 10);
+                }
+
+                //Q18
+                if (document.R.rep17.un.checked || document.R.rep17.deux.checked || document.R.rep17.trois.checked || document.R.rep17.quatre.checked || document.R.rep17.cinq.checked)
+                {
+                  var r = document.getElementsByName("rep17").value;
+                  var rr = Number.parseInt('r' , 10);
+                }
+
+                  //Q19
+                if (document.R.rep18.un.checked || document.R.rep18.deux.checked || document.R.rep18.trois.checked || document.R.rep18.quatre.checked || document.R.rep18.cinq.checked)
+                {
+                  var s = document.getElementsByName("rep18").value;
+                  var ss = Number.parseInt('s' , 10);
+                }
+
+                    //Q20
+                if (document.R.rep19.un.checked || document.R.rep19.deux.checked || document.R.rep19.trois.checked || document.R.rep19.quatre.checked || document.R.rep19.cinq.checked)
+                { 
+                  var t = document.getElementsByName("rep19").value;
+                  var tt = Number.parseInt('t' , 10);
+                }
+
+        </script>
+    </body>
+
+    <center><h1>Questionnaire d'evaluation</h1></center>
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+      <div class="content"><h1>Questionnaire obligatoire</h1></div>    
+
+    <form name="R" method="POST" action="Traitement.php" >
+        <fieldset>
+            <legend>1. Comment qualiferiez-vous la charge de travail demandee par le cours?</legend></br>
+
+            <input type="radio" name="rep" id="bti" value="5" checked>
+            <label for="bti">Beaucoup trop importante </label></br>
+
+            <input type="radio" name="rep" id="ti" value="4" >
+            <label for="ti"> Trop importante </label></br>
+
+            <input type="radio" name="rep" id="pi" value="3" >
+            <label for="pi"> Un peu importante </label></br>
+
+            <input type="radio" name="rep" id="pti" value="2" >
+            <label for="pti">Un peu trop insuffisante </label></br>
+
+            <input type="radio" name="rep" id="tin" value="1" ></br>
+            <label for="tin">Trop insuffisante  </label>
+        </fieldset>
+
+        <fieldset>
+           <legend> 2.Le cours a t-il repondu a vos attentes?</legend></br>
+            <input type="radio" name="rep1" id="ebr" value="5" >
+            <label for="ebr">Extremement bien repondu</label></br>
+
+            <input type="radio" name="rep1" id="tbr" value="4" checked>
+            <label for="tbr">Tres bien repondu</label></br>
+
+            <input type="radio" name="rep1" id="abr" value="3">
+            <label for="abr">Assez bien repondu</label></br>
+
+            <input type="radio" name="rep1" value="2">
+            <label>Peu repondu</label></br>
+
+            <input type="radio" name="rep1" id="pdtr" value="1">
+            <label for="pdtr">Pas du tout repondu</label></br>
+        </fieldset>
+        <fieldset>
+
+            <legend>3. le cours a t-il contribue a votre connaissance en la matiere?</legend></br>
+            <input type="radio" name="rep2" id="ec" value="5" >
+            <label for="ec">Enormement contribue</label></br>
+
+            <input type="radio" name="rep2" id="bc" value="4" >
+            <label for="bc">Beaucoup contribue</label></br>
+
+            <input type="radio" name="rep2" id="pc" value="3" checked>
+            <label for="pc">Plutot contribue</label></br>
+
+            <input type="radio" name="rep2" id="pco" value="2" >
+            <label for="pco">Peu contribue</label></br>
+
+            <input type="radio" name="rep2" id="ptc" value="1" >
+            <label for="ptc">Pas du tout contribue </label></br>
+        </fieldset>
+        <fieldset>
+            <legend>4. Comment qualifierez-vous le cours?</legend></br>
+            <input type="radio" name="rep3" id="tfa" value="5" >
+            <label for="tfa">Tres facile </label></br>
+
+            <input type="radio" name="rep3" id="afa" value="4" >
+            <label for="afa">Assez facile</label></br>
+
+            <input type="radio" name="rep3" id="nfa" value="3" >
+            <label for="nfa">Ni facile ni difficile</label></br>
+
+            <input type="radio" name="rep3" id="af" value="2" checked>
+            <label for="af">Assez facile </label></br>
+
+            <input type="radio" name="rep3" id="tdi" value="1" >
+            <label for="tdi">Tres difficile</label></br>
+        </fieldset>
+        <fieldset>
+            <legend> 5. Que pensez-vous du rythme du cours?</legend></br>
+            <input type="radio" name="rep4" id="tr" value="5" >
+            <label for="tr">Trop rapide</label></br>
+
+            <input type="radio" name="rep4" id="pt" value="4" >
+            <label for="pt">Un peu trop rapide</label></br>
+
+            <input type="radio" name="rep4" id="nr" value="3" checked>
+            <label for="nr">Ni trop rapide ni trop lent</label></br>
+
+            <input type="radio" name="rep4" id="tpl" value="2" >
+            <label for="tpl">Un peu trop lent</label></br>
+
+            <input type="radio" name="rep4" id="tl" value="1" >
+            <label for="tl">Trop lent</label></br> 
+        </fieldset>
+        <fieldset>
+            <legend>6. Pensez-vous que les supports utilises(support papier, presentation) durant le cours ont ete utiles?</legend></br>
+            <input type="radio" name="rep5" id="a" value="5" >
+            <label for="a">Extremement utiles </label></br>
+
+            <input type="radio" name="rep5" id="b" value="4" >
+            <label for="b">Tres utiles</label></br>
+
+            <input type="radio" name="rep5" id="c" value="3" >
+            <label for="c">Assez utiles</label></br>
+
+            <input type="radio" name="rep5" id="d" value="2" >
+            <label for="d">Peu utiles</label></br>
+
+            <input type="radio" name="rep5" id="e" value="1" checked>
+            <label for="e">Pas du tout utiles</label></br>
+        </fieldset>
+        <fieldset>
+            <legend> 7. Quelle est la probabilite que vous recommandiez le cours a d'autres etudiants?</legend></br>
+            <input type="radio" name="rep6" id="f" value="5" >
+            <label for="f">Extremement probable</label></br>
+
+            <input type="radio" name="rep6" id="g" value="4" checked>
+            <label for="g">Fortement probable</label></br>
+
+            <input type="radio" name="rep6" id="h" value="3" >
+            <label for="h">Moderement probable</label></br>
+
+            <input type="radio" name="rep6" id="i" value="2" >
+            <label for="i">Peu probable</label></br>
+
+            <input type="radio" name="rep6" id="j" value="1" >
+            <label for="j">Pas du tout probable</label></br>
+        </fieldset>
+        <fieldset>
+            <legend>8. Dans l'ensemble etes-vous satisfait(e) du contenu du cours?</legend></br>
+            <input type="radio" name="rep7" id="k" value="5" checked>
+            <label for="k">Tres satisfait(e)</label></br>
+
+            <input type="radio" name="rep7" id="l" value="4" >
+            <label for="l">Assez satisfait(e)</label></br>
+
+            <input type="radio" name="rep7" id="m" value="3" >
+            <label for="m">Ni satifait(e) ni insatisfait(e)</label></br>
+
+            <input type="radio" name="rep7" id="n" value="2" >
+            <label for="n">Assez insatifait(e)</label></br>
+
+            <input type="radio" name="rep7" id="o" value="1" >
+            <label for="o">Tres insatisfait(e)</label></br>
+        </fieldset>
+        <fieldset>
+            <legend>9. Dans l'ensemble quel est votre degre de satisfation concernant le cours?</legend></br>
+            <input type="radio" name="rep8" id="p" value="5" >
+            <label for="p">Tres satisfait(e)</label></br>
+
+            <input type="radio" name="rep8" id="q" value="4" >
+            <label for="q">Assez satisfait(e)</label></br>
+
+            <input type="radio" name="rep8" id="r" value="3" checked>
+            <label for="r">Ni satifait(e) ni insatisfait(e)</label></br>
+
+            <input type="radio" name="rep8" id="s" value="2" >
+            <label for="s">Assez insatifait(e)</label></br>
+
+            <input type="radio" name="rep8" id="t" value="1" >
+            <label for="t">Tres insatisfait(e)</label></br>
+        </fieldset>
+        <fieldset>
+            <legend>10. Quel etait le niveau de qualite global de l'instructeur pour ce cours?</legend></br>
+            <input type="radio" name="rep9" id="u" value="5" >
+            <label for="u">Excellent</label></br>
+
+            <input type="radio" id="v" name="rep9" value="4" checked>
+            <label for="v">Tres bon</label></br>
+
+            <input type="radio" name="rep9" id="w" value="3" >
+            <label for="w"> Bon</label></br>
+
+            <input type="radio" name="rep9" id="x" value="2" >
+            <label for="x">Assez bon</label></br>
+
+            <input type="radio" name="rep9" id="y" value="1" >
+            <label for="y">Faible</label></br>
+        </fieldset>
+        <fieldset>
+            <legend> 11. Le cours etait-il bien organise?</legend></br>
+            <input type="radio" name="rep10" id="z" value="5" >
+            <label for="z">Extremement bien organise</label></br>
+
+            <input type="radio" name="rep10" id="aa" value="4" >
+            <label for="aa">Tres bien organise </label></br>
+
+            <input type="radio" name="rep10" id="bb" value="3" checked>
+            <label for="bb">Assez bien organise</label></br>
+
+            <input type="radio" name="rep10" id="cc" value="2" >
+            <label for="cc">Pas tres organise</label></br>
+
+            <input type="radio" name="rep10" id="dd" value="1" >
+            <label for="dd">Pas du tout organise</label></br>
+        </fieldset>
+        <fieldset>
+            <legend>12. Quel est le niveau de connaissance du sujet de cours de l'instructeur?</legend></br>
+            <input type="radio" name="rep11" id="ee" value="5" >
+            <label for="ee">Excellent niveau de connaissance</label></br>
+
+            <input type="radio" name="rep11" id="ff" value="4" >
+            <label for="ff">Tres bon niveau de connaissance </label></br>
+
+            <input type="radio" name="rep11" id="gg" value="3" checked>
+            <label for="gg">Assez bon niveau de connaissance </label></br>
+
+            <input type="radio" name="rep11" id="hh" value="2" >
+            <label for="hh">Niveau de connaissance mediocre</label></br>
+
+            <input type="radio" name="rep11" id="ii" value="1" >
+            <label for="ii">Aucune connaissance</label></br>
+        </fieldset>
+        <fieldset>
+            <legend>13.les explications de l'instructeur etaient-elles claires?</legend></br>
+            <input type="radio" name="rep12" id="jj" value="5" >4
+            <label for="jj">Extremement claires</label></br>
+
+            <input type="radio" name="rep12" id="kk" value="4" >
+            <label for="kk">Tres claires </label></br>
+
+            <input type="radio" name="rep12" id="ll" value="3" >
+            <label for="ll"> Assez claires </label></br>
+
+            <input type="radio" name="rep12" id="mm" value="2" checked>
+            <label for="mm">Peu claires </label></br>
+
+            <input type="radio" name="rep12" id="nn" value="1" >
+            <label for="nn">Pas du tout claires</label></br>
+        </fieldset>
+        <fieldset>
+            <legend>14. De quelle maniere l'instructeur etaient-il concerne par l'apprentissage des eleves dans ce cours?</legend></br>
+            <input type="radio" name="rep13" id="oo" value="5" >
+            <label for="oo">Extremement concerne</label></br>
+
+            <input type="radio" name="rep13" id="pp" value="4" checked>
+            <label for="pp">Tres concerne</label></br>
+
+            <input type="radio" name="rep13" id="qq" value="3" >
+            <label for="qq">Assez concerne</label></br>
+
+            <input type="radio" name="rep13" id="rr" value="2" >
+            <label for="rr">Peu concerne</label></br>
+
+            <input type="radio" name="rep13" id="ss" value="1" >
+            <label for="ss">Pas du tout concerne</label></br>
+        </fieldset>
+        <fieldset>
+            <legend>15. L'instructeur avait-il une attitude encourageante envers les eleves?</legend></br>
+            <input type="radio" name="rep14" id="tt" value="5" checked>
+            <label for="tt">Extremement encouragente</label></br>
+
+            <input type="radio" name="rep14" id="uu" value="4" >
+            <label for="uu">Tres encouragente</label></br>
+
+            <input type="radio" name="rep14" id="vv" value="3" >
+            <label for="vv">Assez encouragente</label></br>
+
+            <input type="radio" name="rep14" id="ww" value="2" >
+            <label for="ww">Peu encouragente</label></br>
+
+            <input type="radio" name="rep14" id="xx" value="1" >
+            <label for="xx">Pas du tout encouragente</label></br>
+        </fieldset>
+        <fieldset>
+            <legend>16. L'instructeur etait-il disponible en dehors du cours?</legend></br>
+            <input type="radio" name="rep15" id="yy" value="5" >
+            <label for="yy">Extremement disponible</label></br>
+
+            <input type="radio" name="rep15" id="zz" value="4" >
+            <label for="zz">Tres disponible</label></br>
+
+            <input type="radio" name="rep15" id="aaa" value="3" >
+            <label for="aaa">Assez disponible</label></br>
+
+            <input type="radio" name="rep15" id="bbb" value="2" checked>
+            <label for="bbb"> Pas tres disponible</label></br>
+
+            <input type="radio" name="rep15" id="ccc" value="1" >
+            <label for="ccc">Pas du tout disponible</label></br>
+        </fieldset>
+        <fieldset>
+            <legend>17.Dans quelle mesure les criteres d'evaluation du cours etaient-ils clairs?</legend></br>
+            <input type="radio" name="rep16" id="ddd" value="5" >
+            <label for="ddd">Extremement clairs</label></br>
+
+            <input type="radio" name="rep16" id="eee" value="4" >
+            <label for="eee">Tres clairs</label></br>
+
+            <input type="radio" name="rep16" id="fff" value="3" >
+            <label for="fff">Assez clairs</label></br>
+
+            <input type="radio" name="rep16" id="ggg" value="2" >
+            <label for="ggg">Peu clairs</label></br>
+
+            <input type="radio" name="rep16" id="hhh" value="1" checked>
+            <label for="hhh">Pas clairs du tout</label></br>
+        </fieldset>
+        <fieldset>
+            <legend>18. Comment qualifierez-vous le cours?</legend></br>
+            <input type="radio" name="rep17" id="iii" value="5" >
+            <label for="iii">Tres facile </label></br>
+
+            <input type="radio" name="rep17" id="jjj" value="4" >
+            <label for="jjj">Assez facile</label></br>
+
+            <input type="radio" name="rep17" id="kkk" value="3" >
+            <label for="kkk">Ni facile ni difficile</label></br>
+
+            <input type="radio" name="rep17" id="lll" value="2" checked>
+            <label for="lll">Assez facile </label></br>
+
+            <input type="radio" name="rep17" id="mmm" value="1" >
+            <label for="mmm">Tres difficile</label></br>
+        </fieldset>
+        <fieldset>
+            <legend>19. Quelle est la probabilite que vous recommandiez le cours a d'autres etudiants?</br></legend>
+            <input type="radio" name="rep18" id="nnn" value="5" >
+            <label for="nnn">Extremement probable</label></br>
+
+            <input type="radio" name="rep18" id="ooo" value="4" checked>
+            <label for="ooo">Fortement probable</label></br>
+
+            <input type="radio" name="rep18" id="ppp" value="3" >
+            <label for="ppp">Moderement probable</label></br>
+
+            <input type="radio" name="rep18" id="qqq" value="2" >
+            <label for="qqq">Peu probable</label></br>
+
+            <input type="radio" name="rep18" id="rrr" value="1" >
+            <label for="rrr">Pas du tout probable</label></br>
+        </fieldset>
+        <fieldset>
+
+            <legend>20. Si vous avez d'autres suggestions ou commentaires concernant le cours, merci de nous en faire part.</legend></br>
+            <textarea name="rep19" rows="6" cols="175"> </textarea></br>
+
+            <a href="Traitement.php">Valider</a>
+            
+    </form>
+    
+</html>
